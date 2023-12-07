@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+.searchBar {
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(179, 240, 213);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+  background-color: rgba(4, 32, 39, 0.411);
+  background-size: cover;
+  border-bottom: 6px solid rgba(0, 195, 255, 0.173);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51);
+  border-top: 6px solid rgba(0, 195, 255, 0.173);
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.inputAndButton {
+  display: flex;
+  align-items: center;
+}
+
+.showButton {
+  transform: translateY(-20px);
+  margin: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.51);
+  color: rgb(237, 222, 177);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  background: linear-gradient(45deg, #6e4698, #550e8f);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  height: auto;
+  height: 35px;
+  white-space: nowrap;
+}
+
+.showButton:hover {
+  background: linear-gradient(45deg, #7e4698, #8f0e89);
+}
+
+.showButton:active {
+  background: linear-gradient(45deg, #c94da0, #8f0e33);
+}
+
+#input {
+  transform: translateY(-21px);
+  color: rgb(237, 222, 177);
+  display: flex;
+  margin: 10px;
+  background: linear-gradient(45deg, #6e4698, #550e8ff7);
+  border-radius: 5px;
+  outline: none;
+  padding: 0px;
+  width: 82px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align:center;
+  caret-color:transparent;
+}
+#input::placeholder {
+  color: rgb(237, 222, 177);
+  font-size: small;
+  font-weight: lighter;
+}
+input:focus {
+  border: 2px solid rgb(179, 240, 213);
+  font-weight: lighter;
+  
+}
+
+
+.headText {
+  font-family: "Kanit", sans-serif;
+  user-select: none;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  height: min-content;
+  width: max-content;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1340px) {
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .headText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headText {
+    width: 90%;
+    font-size: 25px;
+  }
+  .headTextContainer {
+    display: none;
+    justify-content: center;
+  }
+}

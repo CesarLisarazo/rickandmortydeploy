@@ -1,0 +1,21 @@
+.detailContainer{
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.detailCard{
+    height: 690px;
+    width: 300px;
+font-size: 20px;
+
+}
+
+.detailCard img{
+    width: 284px;
+    transform: translateY(35px);
+}
+
+.detailCard img:hover{
+    cursor: pointer;
+}

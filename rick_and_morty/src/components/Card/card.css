@@ -1,0 +1,103 @@
+.card {
+  user-select: none;
+  color: rgb(179, 240, 213);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  background: linear-gradient(45deg, #adcde6, #8024cc);
+  background-image: url(https://img.freepik.com/premium-vector/space-background-blue-violet-black-background_624315-118.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 4px solid rgba(0, 213, 255, 0.1);
+  border-radius: 7px;
+  height: 320px;
+  width: 150px;
+  overflow: hidden;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51);
+  transition: transform 0.2s ease;
+  padding-top: 0px;
+  font-size: 12px;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  border: 4px solid rgba(0, 213, 255, 0.531);
+}
+
+.card img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(89, 3, 3, 0.623);
+  width: 150px;
+  position: absolute;
+  border: 4px solid rgba(179, 240, 213, 0.728);
+  bottom: 50px;
+  left: 4%;
+}
+.card img:hover {
+
+  border: 4px solid rgba(60, 239, 146, 0.849);
+}
+
+
+.charName{
+ transform: translateY(-33px); 
+}
+.closeCard {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.51);
+  color: rgb(237, 222, 177);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  font-size: 17px;
+  height: 30px;
+  width: 110px;
+  position: absolute;
+  bottom: 10px;
+  left: 18%;
+  background: linear-gradient(45deg, #6e4698, #550e8f);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.closeCard:hover {
+  background: linear-gradient(45deg, #7e4698, #8f0e89);
+  color: rgb(195, 229, 181);
+}
+
+
+.closeCard:active {
+  transform: translate3d(1.5px, 1.5px, 0);
+  background: linear-gradient(45deg, #c94da0, #8f0e33);
+}
+
+.charidbackground{
+  position: absolute;
+  width: 34px;
+  height: 24px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(179, 240, 213, 0.458);
+  border: 1px solid  rgba(179, 240, 213, 0.458);
+ 
+  transform: translate3d( -7px, -64px, 0px);
+}
+
+.charId{
+
+  transform: translate3d( -64px, -30px, 0px);
+ 
+}
+
+.heartFav{
+  width: 39px;
+  height: 26px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(179, 240, 213, 0.458);
+  border: 1px solid  rgba(179, 240, 213, 0.458);
+  background-color: transparent;
+  transform: translate3d( 60px, 5px, 0px);
+  color: #adcde6c9;
+}
+.heartFav:hover{
+  cursor: pointer;
+}
